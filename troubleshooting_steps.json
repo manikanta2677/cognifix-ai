@@ -1,0 +1,50 @@
+{
+  "wifi_issue": {
+    "title": "Wi-Fi Connection Problem",
+    "category": "Network",
+    "steps": [
+      "Check whether Wi-Fi is turned on.",
+      "Restart your router.",
+      "Forget the Wi-Fi network and reconnect.",
+      "Restart your device.",
+      "Check whether other devices can connect.",
+      "Contact your Internet Service Provider if the issue continues."
+    ]
+  },
+  "login_issue": {
+    "title": "Login Problem",
+    "category": "Account",
+    "steps": [
+      "Check your username and password.",
+      "Reset your password using Forgot Password.",
+      "Clear browser cache and cookies.",
+      "Try another browser.",
+      "Check whether your account is locked.",
+      "Contact customer support if login still fails."
+    ]
+  },
+  "app_crash": {
+    "title": "Application Crash",
+    "category": "Software",
+    "steps": [
+      "Close the application completely.",
+      "Restart your device.",
+      "Update the app to the latest version.",
+      "Clear app cache.",
+      "Check available storage.",
+      "Reinstall the app if the crash continues."
+    ]
+  },
+  "payment_issue": {
+    "title": "Payment Failure",
+    "category": "Billing",
+    "steps": [
+      "Check your internet connection.",
+      "Verify card details.",
+      "Check bank balance or transaction limit.",
+      "Try another payment method.",
+      "Wait for a few minutes and retry.",
+      "Contact support if money was deducted."
+    ]
+  }
+}
