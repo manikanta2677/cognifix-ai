@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CogniFix AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2ff;
+            padding: 40px;
+        }
+
+        .box {
+            max-width: 750px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #999;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1d4ed8;
+        }
+
+        h3 {
+            text-align: center;
+            color: #444;
+        }
+
+        select, button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #1d4ed8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 25px;
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>CogniFix AI</h1>
+    <h3>LLM-Driven Intelligent Troubleshooting Agent</h3>
+
+    <form action="/solve" method="post">
+        <label>Select Issue:</label>
+        <select name="issue_type">
+            {% for issue in issues %}
+                <option value="{{ issue }}">{{ issue }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Generate Solution</button>
+    </form>
+
+    {% if solution %}
+    <div class="result">
+        <h2>Generated Solution</h2>
+        <ol>
+            {% for step in solution %}
+                <li>{{ step }}</li>
+            {% endfor %}
+        </ol>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
